@@ -7,6 +7,7 @@ session_start();
  * Autoloader, nutzt _ in Klassen Namen um daraus die Ordnerstruktur herzuleiten
  */
 spl_autoload_register(function ($className){
+  ///src/Controller/Index.php
     $path = __DIR__.'/src/'.str_replace(['_','\\'],'/',$className).'.php';
     if(is_file($path)){
         require_once $path;

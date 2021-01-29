@@ -1,6 +1,5 @@
 <?php
 
-
 final class Controller_Index
 {
 
